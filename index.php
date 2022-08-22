@@ -2,7 +2,7 @@
 
 require "function.php";
 
-
+$pictures = query("SELECT * FROM picture")
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,6 +13,10 @@ require "function.php";
     <title>Gallery</title>
 </head>
 <body>
-    
+        <?php $i = 1; ?>
+        <?php foreach($pictures as $row) : ?>
+        <img src="img/<?= $row["gambar"]?>">
+        <?php $i++; ?>
+        <?php endforeach; ?>
 </body>
 </html>
