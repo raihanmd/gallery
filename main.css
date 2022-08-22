@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.button{
+    width: 60px;
+    height: 15px;
+    color: black;
+    border-radius: 5px;
+}
